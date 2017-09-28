@@ -15,10 +15,10 @@ W210 Capstone Project for Image Recognition of Food
 
 ## Class deadlines
 
-### 10/10/17 : Presentation 1
+10/10/17 : Presentation 1
 
-### 10/24/17 : Workshop 3 (architecture and pipeline design)
+10/24/17 : Workshop 3 (architecture and pipeline design)
 
-### 11/07/17 : Presentation 2
+11/07/17 : Presentation 2
 
-### 12/05/17 : Presentation 3 (last presentation... supposedly a couple more weeks to wrap up deliverable)
+12/05/17 : Presentation 3 (last presentation... supposedly a couple more weeks to wrap up deliverable)
