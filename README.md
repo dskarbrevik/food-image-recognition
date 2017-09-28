@@ -1,12 +1,12 @@
 # w210-food-image-recognition
 This is a group class project (W210 Capstone Project) to label calorie counts from images of food.
 
-####Group Members: 
+#### Group Members: 
 * Joseph Downs
 * Amitabha Karmakar
 * David Skarbrevik
 
-### [Notes from ourproject meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
+### [Notes from our group meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
 
 ## Presentations
 * [Presentation 1 Slides](https://docs.google.com/presentation/d/1sENv0nJ4NePzaM3W_ue4z5ibSIiScoV83BRom1V7Cts/edit?usp=sharing)
