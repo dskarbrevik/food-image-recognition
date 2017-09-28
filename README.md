@@ -5,9 +5,9 @@ W210 Capstone Project for Image Recognition of Food
 
 ## [Workshop 3 Slides](https://docs.google.com/presentation/d/1B3jfyS-w944U3l0hexdWsBhgDp36QlR_N21YjB8G5nw/edit?usp=sharing)
 
-## Useful links
+### [Notes from our project meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
 
-### [Notes from project meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
+## Useful class links
 
 ### [Expectations and deliverables](https://docs.google.com/document/d/16K7DXZ6S2Npp3DCzTI--TSAD8kXtRq7N2nsLoDm-EyY/edit)
 
