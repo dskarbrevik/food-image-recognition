@@ -1,7 +1,12 @@
 # w210-food-image-recognition
-W210 Capstone Project for Image Recognition of Food
+This is a group class project (W210 Capstone Project) to label calorie counts from images of food.
 
-#### [Notes from our project meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
+####Group Members: 
+* Joseph Downs
+* Amitabha Karmakar
+* David Skarbrevik
+
+### [Notes from ourproject meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
 
 ## Presentations
 * [Presentation 1 Slides](https://docs.google.com/presentation/d/1sENv0nJ4NePzaM3W_ue4z5ibSIiScoV83BRom1V7Cts/edit?usp=sharing)
@@ -10,9 +15,9 @@ W210 Capstone Project for Image Recognition of Food
 
 ## Useful class links
 
-### [Expectations and deliverables](https://docs.google.com/document/d/16K7DXZ6S2Npp3DCzTI--TSAD8kXtRq7N2nsLoDm-EyY/edit)
+* [Expectations and deliverables](https://docs.google.com/document/d/16K7DXZ6S2Npp3DCzTI--TSAD8kXtRq7N2nsLoDm-EyY/edit)
 
-### [Group project guidelines](https://docs.google.com/document/d/19nNX8YWXchRivXPseNrR9A6Pg80_tSnfT318TCQIVKQ/edit)
+* [Group project guidelines](https://docs.google.com/document/d/19nNX8YWXchRivXPseNrR9A6Pg80_tSnfT318TCQIVKQ/edit)
 
 ## Class deadlines
 
