@@ -9,7 +9,10 @@ This is a group class project (W210 Capstone Project) to label calorie counts fr
 ### [Notes from our group meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
 
 ## Presentations
+
+### Presentation 1 Material
 * [Presentation 1 Slides](https://docs.google.com/presentation/d/1sENv0nJ4NePzaM3W_ue4z5ibSIiScoV83BRom1V7Cts/edit?usp=sharing)
+* [Presentation 1 detailed info](https://docs.google.com/document/d/1as0cTnEzsx_7RPxhFRcnqhHd4dK513UjoWxaV63sB7k/edit?usp=sharing)
 
 * [Workshop 3 Slides](https://docs.google.com/presentation/d/1B3jfyS-w944U3l0hexdWsBhgDp36QlR_N21YjB8G5nw/edit?usp=sharing)
 
