@@ -27,7 +27,7 @@ This is a group class project (W210 Capstone Project) to label calorie counts fr
 
 10/10/17 : Presentation 1
 
-10/24/17 : Workshop 3 (architecture and pipeline design)
+10/31/17 : Workshop 3 (architecture and pipeline design)
 
 11/07/17 : Presentation 2
 
