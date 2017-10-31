@@ -7,6 +7,7 @@ This is a group class project (W210 Capstone Project) to label calorie counts fr
 * David Skarbrevik
 
 ### [Notes from our group meetings](https://docs.google.com/document/d/1ZRbHr85DDHyFNUwm1Y-xX-1y0ikdkIl3YG1EOnwC0fE/edit)
+### [Talking Points to Bring up with Professors](https://docs.google.com/document/d/1eH1uGR09w2Sx4AwPajQTAoYM89-7oW7vZiX4jav97zw/edit?usp=sharing)
 
 ## Presentations
 
