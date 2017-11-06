@@ -15,6 +15,9 @@ This is a group class project (W210 Capstone Project) to label calorie counts fr
 * [Presentation 1 Slides](https://docs.google.com/presentation/d/1sENv0nJ4NePzaM3W_ue4z5ibSIiScoV83BRom1V7Cts/edit?usp=sharing)
 * [Presentation 1 detailed info](https://docs.google.com/document/d/1as0cTnEzsx_7RPxhFRcnqhHd4dK513UjoWxaV63sB7k/edit?usp=sharing)
 
+### Presentation 2 Materail
+* [Presentation 2 Slides](https://docs.google.com/presentation/d/1UWHfTw3S9Bb0dxZgoVWWJ1--I2-0bGQIqng3hS7cLgs/edit?usp=sharing)
+
 ### Workshop Material
 * [Workshop 3 Slides](https://docs.google.com/presentation/d/1B3jfyS-w944U3l0hexdWsBhgDp36QlR_N21YjB8G5nw/edit?usp=sharing)
 
