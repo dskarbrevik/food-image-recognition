@@ -33,6 +33,6 @@ This is a group class project (W210 Capstone Project) to label calorie counts fr
 
 10/31/17 : Workshop 3 (architecture and pipeline design)
 
-11/07/17 : Presentation 2
+11/14/17 : Presentation 2
 
-12/05/17 : Presentation 3 (last presentation... supposedly a couple more weeks to wrap up deliverable)
+12/12/17 : Presentation 3 (last presentation... supposedly a couple more weeks to wrap up deliverable)
