@@ -1,20 +1,13 @@
-<html>
-    <title>FoodHUD</title>
-<body>
+#Welcome to FoodHUD!
 
-    <h1> Welcome to FoodHUD! </h1>
+## What is FoodHUD?
+This is what it's about
 
-    <h2> What is FoodHUD? </h2>
-    <p>This is what it's about</p>
+## Why did we make this?
+This is the value of this idea
 
-    <h2> Why did we make this? </h2>
-    <p> This is the value of this idea </p>
+## How did we put this thing together?
+Here's something we did
+Here's something else we did
 
-    <h2> How did we put this thing together? </h2>
-    <p> Here's something we did </p>
-    <p> Here's something else we did </p>
-
-    <h2> Here are some things we'd like to do next </h2>
-
-</body>
-</html>
+## Here are some things we'd like to do next
