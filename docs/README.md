@@ -1,4 +1,4 @@
-#Welcome to FoodHUD!
+<center> # Welcome to FoodHUD! </center>
 
 ## What is FoodHUD?
 This is what it's about
