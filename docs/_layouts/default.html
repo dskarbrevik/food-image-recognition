@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
+  
   <body>
+    
+    <!-- Header section of the website -->
     <section class="page-header">
       <h1 class="project-name">FoodHUD</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -22,41 +25,31 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
     </section>
-    
-    <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
-      <button class="w3-bar-item w3-button"
-      onclick="w3_close()">Close &times;</button>
+   
+    <!-- This adds a sidebar menu for easy jumping around -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%;" id="mySidebar">
+      <h3 class="w3-bar-item">Menu</h3>
       <a href="#" class="w3-bar-item w3-button">Link 1</a>
       <a href="#" class="w3-bar-item w3-button">Link 2</a>
       <a href="#" class="w3-bar-item w3-button">Link 3</a>
-    </div>
-
-    <div class="w3-main" style="margin-left:200px">
-    <div class="w3-teal">
-      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-      <div class="w3-container">
-        <h1>My Page</h1>
-      </div>
-      </div>
-    </div>
-
-    <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>   
+    </div>  
     
+    <!-- Main text of site is here -->
     <section class="main-content">
   
-      <h2> This is a test </h2>
+      <h2> This 
+        is a test </h2>
       
-      {{ content }}
+
       
       <p> This is another test </p>
-
+      
+      
+      <!-- use this if you want to use README.md as main html page text instead
+      {{ content }}      
+      -->
+      
+      <!-- Footer section of site here -->
       <footer class="site-footer">
         {% if site.github.is_project_page %}
         <span class="site-footer-owner"> UC, Berkeley MIDS Fall 2017 </span>
