@@ -83,6 +83,9 @@
         and often it is difficult for someone to estimate the caloric content of a given meal.
         While a human may struggle with the task,
         a well-trained machine may not. </p>
+
+        <img src="obesity.jpg">
+
       <p>Recent advances in computer vision, driven by developments in deep learning,
         have enabled computers to successfully distinguish thousands of classes of images of items with impressive accuracy.
         Researchers have already developed image classification data sets comprised of images of food.</p>
@@ -141,7 +144,19 @@
         Using the caloric information from this data source, we were able to compute the median caloric density (kcal/100g) for 53 of the original 101 food categories in Food101.
         These calorie values seem reasonable and will allow us to integrate nutritional data into our application.</p>
 
+
+
+      <p>The distributions seem to suggest that MyFitnessPal's "per serving" calorie values and USDA's "per 100grams" calorie values are similar. However there are a couple issues.</p>
+
+      <p>First, here we see that there are some issues with the calorie values for foods in MyFitnessPal:</p>
+      <img src="mfp_hist.png">
+
+      <p>Compared to the relatively stable distribution found from USDA:</p>
       <img src="usda_hist.png">
+
+      <p>Second, we fail to see a linear relationship between "per serving" and "caloric density" in the data plotted here:</p>
+      <img src="calorie_comparison.png">
+
 
 
       <h3 id="topic3_3"> Modeling </h3>
@@ -158,6 +173,9 @@
         We used a much simpler model as our baseline, whose only input features were the sums across all pixels of each of the three color channels.
         This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features, which suggests that,
         at the very least, linear regression is not a reasonable option for direct regression of caloric density.</p>
+
+        <img src="cheesecake_regress.png">
+        <img src="macaron_regress.png">
 
       <h3 id="topic3_4"> Web-Based Application </h3>
       <p>Using Python's Flask library and Google's Cloud services, we established a web application capable of serving Keras model predictions based on user provided contet. </p>
