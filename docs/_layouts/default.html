@@ -29,15 +29,25 @@
     <!-- This adds a sidebar menu for easy jumping around -->
     <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%;" id="mySidebar">
       <h3 class="w3-bar-item">Menu</h3>
-      <a href="#" class="w3-bar-item w3-button">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      <a href="#topic1" class="w3-bar-item w3-button">What is FoodHUD?</a>
+      <a href="#topic2" class="w3-bar-item w3-button">Background Motivation</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">How We Made FoodHUD <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block">
+            <a href="#topic3" class="w3-bar-item w3-button">Link</a>
+              <a href="#topic3_1" class="w3-bar-item w3-button">Link</a>
+        </div>
+      </div>
+      <a href="#" class="w3-bar-item w3-button">How We Made FoodHUD</a>
     </div>
 
     <!-- Main text of site is here -->
     <section class="main-content">
 
-      <h2 id="topic1"> Background Info on the Idea </h2>
+      <h2 id="topic1"> What is FoodHUD? </h2>
+      <p>FoodHUD is an easy to use web application where a user uploads an image of food and then receives the name of the food along with nutritional data on the food.</p>
+
+      <h2 id="topic2"> Background motivation </h2>
 
       <p>Millions of Americans struggle with their weight and its effects on their physical health.
         Portion control can be a serious challenge for busy people,
@@ -52,7 +62,12 @@
         This provides a proof of concept that the automated identification of food is within our grasp,
         and these solutions may provide a path forward for Americans seeking to reign in their caloric intake.</p>
 
-      <h2 id="topic2"> The things we did to make it </h2>
+      <h2 id="topic3"> How we made FoodHUD </h2>
+
+      <p>Inspired by the progress made on the Food101 data set,
+        we set out to implement an automated tool to estimate the caloric content of a plate of food based on an image.
+        We believe that such a product, available as a web-based application or preferably a mobile application,
+        could bolster a consumer’s ability to control their diet and be more health- and nutrition-conscious. </p>
 
       <p>We developed our solution in multiple parallel stages.
         We knew that we needed to acquire not only labelled image data of foods,
@@ -64,9 +79,9 @@
         We chose to update the neural network architecture to reflect our augmented data set.
         Finally, we needed to create an application to leverage our deep learning model and perform class identification and use a lookup table to derive calorie prediction.</p>
 
-      <h3 id="topic2_1"> Image Set Augmentation </h3>
-      <p>Although Food101 offered a laudable 1000 images per class,
-        we suspected that we would benefit from an augmented data set.
+      <h3 id="topic3_1"> Image Set Augmentation </h3>
+      <p>The pre-existing Food101 dataset offered a laudable 1000 images per class,
+        we suspected that we would benefit from an augmented data set (e.g. more images, more classes).
         To that end, we explored a few additional data sources,
         including pre-compiled data sets and public image sites.
         Namely, we considered integrating data from the UEC data set,
@@ -83,7 +98,7 @@
         taking 5 different crops of the image in its original orientation and also its reflection about its vertical axis.
         This expanded image set proved to improve our performance over the baseline, and so we were satisfied with it.</p>
 
-      <h3 id="topic2_2"> Nutritional Information Acquisition </h3>
+      <h3 id="topic3_2"> Nutritional Information Acquisition </h3>
       <p>Because we wanted to predict calorie data about a food, we needed a reliable and open resource for nutritional information.
         Initially, we sought to use MyFitnessPal as a data source. It seemed like a reliable data source,
         and all of the Food101 categories had at least one relevant entry in the nutritional database.
@@ -112,7 +127,7 @@
         We used a much simpler model as our baseline, whose only input features were the sums across all pixels of each of the three color channels.
         This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features, which suggests that,
         at the very least, linear regression is not a reasonable option for direct regression of caloric density.</p>
-  
+
 
       <!-- use this if you want to use README.md as main html page text instead
       {{ content }}
