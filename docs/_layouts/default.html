@@ -49,11 +49,16 @@
     <div class="w3-sidebar w3-border-right w3-bar-block w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button> -->
-    <div class="sidenav">
-      <a href="#topic1" class="w3-bar-item w3-button">Something</a>
-      <a href="#topic2" class="w3-bar-item w3-button">Something else</a>
-      <a href="#topic3" class="w3-bar-item w3-button">Another thing</a>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
     </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()">open</span>
 
     <div id="main">
 
