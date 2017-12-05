@@ -43,25 +43,25 @@
       <a href="#topic4" class="w3-bar-item w3-button">Resources</a>
     </div>
     -->
-    
-    
+
+
     <!-- Side bar that can open and close
     <div class="w3-sidebar w3-border-right w3-bar-block w3-animate-left" style="display:none" id="mySidebar">
       <button class="w3-bar-item w3-button w3-large"
       onclick="w3_close()">Close &times;</button> -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <a href="#topic1">What is FoodHUD?</a>
+      <a href="#topic2">Background motivation</a>
+      <a href="#topic3">How we made FoodHUD</a>
+      <a href="#topic4">Resources</a>
     </div>
 
     <!-- Use any element to open the sidenav -->
     <button class="openNav" onclick="openNav()">&#9776;</button>
 
     <div id="main">
-      
+
     <!-- Large banner below hero image
     <div class="w3-teal">
       <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
@@ -69,7 +69,7 @@
         <h1>My Page</h1>
       </div>
     </div> -->
-      
+
     <!-- Main text of site is here -->
     <section class="main-content">
 
@@ -144,7 +144,7 @@
       <h3 id="topic3_3"> Modeling </h3>
       <h4> Classification Modeling </h4>
       <p> I don't know what we'll say here, if anything. </p>
-      
+
       <h4> Regression Modeling </h4>
       <p>Our final architecture used classification and then looked up the median caloric density based on the class.
         However, we were also interested in determining the performance of the model when attempting to use linear regression to predict the caloric density directly.
@@ -159,6 +159,13 @@
       <h3 id="topic3_4"> Web-Based Application </h3>
       <p>Using Python's Flask library and Google's Cloud services, we established a web application capable of serving Keras model predictions based on user provided contet. </p>
 
+
+      <h2 id="topic4"> Resources </h2>
+      <ol>
+          <li>First resource</li>
+          <li>Second resource</li>
+          <li>Third resource</li>
+      </ol>
       <!-- use this if you want to use README.md as main html page text instead
       {{ content }}
       -->
@@ -173,16 +180,16 @@
       </footer>
     </section>
     </div>
-    
+
     <!-- Trying to get menu button to stay still... might not need this
     window.onscroll = function() {scrollFunction()};
-    
+
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             document.getElementByClassName("openNav")[0].style.display = "block";
     }
     -->
-    
+
     <script>
       /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
       function openNav() {
