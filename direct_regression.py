@@ -79,7 +79,7 @@ def compute_cv_scores(
         pca_features = pca.fit_transform(features)
         cv_score = cross_val_score(
                 model,
-                features[valid_ix, :],
+                pca_features[valid_ix, :],
                 labels_n[valid_ix],
                 scoring=make_scorer(mean_squared_error),
                 cv=n_cv).mean()
