@@ -4,7 +4,11 @@
 @import "{{ site.theme }}";
 
 .page-header{
- background-image: url("../../banner2_higher_res.jpg")
+    background-image: url("../../banner2_higher_res.jpg")
+}
+
+.project-tagline{
+    opacity: 0.9;
 }
 
 .openNav, button.openNav {
