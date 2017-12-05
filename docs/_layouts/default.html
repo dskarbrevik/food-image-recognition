@@ -173,6 +173,17 @@
       </footer>
     </section>
     </div>
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    
     <script>
       /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
       function openNav() {
