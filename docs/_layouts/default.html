@@ -34,9 +34,11 @@
       <div class="w3-dropdown-hover">
         <button class="w3-button">How We Made FoodHUD <i class="fa fa-caret-down"></i></button>
         <div class="w3-dropdown-content w3-bar-block">
-            <a href="#topic3_1" class="w3-bar-item w3-button">Link</a>
-            <a href="#topic3_2" class="w3-bar-item w3-button">Link</a>
-            <a href="#topic3_3" class="w3-bar-item w3-button">Link</a>
+            <a href="#topic3_1" class="w3-bar-item w3-button">Image Data</a>
+            <a href="#topic3_2" class="w3-bar-item w3-button">Nutritional Data</a>
+            <a href="#topic3_3" class="w3-bar-item w3-button">Modeling</a>
+            <a href="#topic3_4" class="w3-bar-item w3-button">Web Application</a>
+
         </div>
       </div>
       <a href="#topic4" class="w3-bar-item w3-button">Resources</a>
@@ -113,12 +115,11 @@
         Using the caloric information from this data source, we were able to compute the median caloric density (kcal/100g) for 53 of the original 101 food categories in Food101.
         These calorie values seem reasonable and will allow us to integrate nutritional data into our application.</p>
 
-      <h2 id="topic3"> What came out in the end </h2>
-
-      <h3 id="topic3_1"> Web-Based Application </h3>
-      <p>Using Flask and Google Cloud services, we cr WRITE MOOORE HEREEREREREEEEEEEEEEE!!! </p>
-
-      <h3 id="topic3_2"> Regression Experiment </h3>
+      <h3 id="topic3_3"> Modeling </h3>
+      <h4> Classification Modeling </h4>
+      <p> I don't know what we'll say here, if anything. </p>
+      
+      <h4> Regression Modeling </h4>
       <p>Our final architecture used classification and then looked up the median caloric density based on the class.
         However, we were also interested in determining the performance of the model when attempting to use linear regression to predict the caloric density directly.
         We ran an experiment with a subset of 1000 of the Food101 images,
@@ -129,6 +130,8 @@
         This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features, which suggests that,
         at the very least, linear regression is not a reasonable option for direct regression of caloric density.</p>
 
+      <h3 id="topic3_4"> Web-Based Application </h3>
+      <p>Using Python's Flask library and Google's Cloud services, we established a web application capable of serving Keras model predictions based on user provided contet. </p>
 
       <!-- use this if you want to use README.md as main html page text instead
       {{ content }}
