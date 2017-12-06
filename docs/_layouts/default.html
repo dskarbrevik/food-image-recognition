@@ -111,7 +111,7 @@
         Finally, we needed to create an application to leverage our deep learning model and perform class identification and use a lookup table to derive calorie prediction.</p>
 
       <h3 id="topic3_1"> Image Set Augmentation </h3>
-      <p>The pre-existing Food101 dataset offered a laudable 1000 images per class,
+      <p>Although the existing Food101 dataset offered a laudable 1000 images per class,
         we suspected that we would benefit from an augmented data set (e.g. more images, more classes).
         To that end, we explored a few additional data sources,
         including pre-compiled data sets and public image sites.
@@ -126,8 +126,8 @@
         </p>
       <p>Ultimately, we decided that automated data augmentation of our existing image set was the best path forward for us.
         This would allow us to expand our image set from the existing Food101 data set without worrying about data quality and accuracy.
-        Although we found a source that did this, we opted not to due to time. Their implementation would have required more
-        RAM than our systems had, and we could not spare the time to implement our own.
+        We found source code that augmented an image set, but we opted not use it due to time constraints. Their implementation would have
+        required more RAM than our systems had, and we could not spare the time to implement our own.
         </p>
 
       <h3 id="topic3_2"> Nutritional Information Acquisition </h3>
