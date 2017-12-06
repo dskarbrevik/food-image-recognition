@@ -121,12 +121,12 @@
         which would have been less beneficial for a typical American dieter.</p>
       <p>We also attempted to scrape images from Google Images, Instagram, and Flickr.
         We found a useful Chrome extension for Google Images, but the functionality had bugs and daily throughput was limited.
-        Instagram's API was incredibly limited as it requires direct approval from Instagram before use and approval is limited to applications of different purposes than simple data collection.
-        Flickr's API was the overall best option explored for automated food image collection. It allowed for the automated collection of thousands of images based on keyword search. The searches
-        led to relatively high quality results. Searching for "apple pie" resulting in a very large ratio of valid apple pie images (eyeball guess of more than 90% validity).
-        We had hoped to retrain a CNN on a larger image set obtained this way, however time constraints made it not possible.
-        It is also unlcear if the less than 10% of invalid images would destroy any gains that could be had from an increased image dataset.</p>
-      <p>Ultimately, we decided that automated data augmentation of our existing image set was the best path forward for us.
+        Instagram's API was incredibly limited as it required direct approval from Instagram before use and approval was limited to applications with purposes other than data collection.
+        Flickr's API was the overall best option for automated food image collection. It allowed for the automated collection of thousands of images based on keyword search.
+        The searches led to relatively high-quality results. Searching for "apple pie" resulting in a very large ratio of valid apple pie images (roughly 90% were valid by eye).
+        We had hoped to retrain a CNN on a larger image set obtained this way, however time constraints made it impossible.
+        It is also unclear if the invalid images (roughly 10% of the data) would destroy any gains to be had from the increased data volume.</p>
+      <p>We also considered automated data augmentation of our existing image set, through cropping and reflections.
         This would allow us to expand our image set from the existing Food101 data set without worrying about data quality and accuracy.
         We found source code that augmented an image set, but we opted not use it due to time constraints. Their implementation would have
         required more RAM than our systems had, and we could not spare the time to implement our own.</p>
@@ -180,7 +180,7 @@
         <img src="macaron_regress.png">
 
       <h3 id="topic3_4"> Web-Based Application </h3>
-      <p>Using Python's Flask library and Google's Cloud services, we established a web application capable of serving Keras model predictions based on user provided contet. </p>
+      <p>Using Python's Flask library and Google's Cloud services, we established a web application capable of serving predictions from a Keras model, based on user-provided content. </p>
 
 
       <h2 id="topic4"> Resources </h2>
