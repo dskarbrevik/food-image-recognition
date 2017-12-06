@@ -121,14 +121,15 @@
         which would have been less beneficial for a typical American dieter.</p>
       <p>We also attempted to scrape images from Google Images, Instagram, and Flickr.
         We found a useful Chrome extension for Google Images, but the functionality had bugs and daily throughput was limited.
-        Instagram's API was incredibly limited
-        Because of this, it would have taken a long time to acquire an image set even comparable to Food101.
-        </p>
+        Instagram's API was incredibly limited as it requires direct approval from Instagram before use and approval is limited to applications of different purposes than simple data collection.
+        Flickr's API was the overall best option explored for automated food image collection. It allowed for the automated collection of thousands of images based on keyword search. The searches
+        led to relatively high quality results. Searching for "apple pie" resulting in a very large ratio of valid apple pie images (eyeball guess of more than 90% validity).
+        We had hoped to retrain a CNN on a larger image set obtained this way, however time constraints made it not possible.
+        It is also unlcear if the less than 10% of invalid images would destroy any gains that could be had from an increased image dataset.</p>
       <p>Ultimately, we decided that automated data augmentation of our existing image set was the best path forward for us.
         This would allow us to expand our image set from the existing Food101 data set without worrying about data quality and accuracy.
         We found source code that augmented an image set, but we opted not use it due to time constraints. Their implementation would have
-        required more RAM than our systems had, and we could not spare the time to implement our own.
-        </p>
+        required more RAM than our systems had, and we could not spare the time to implement our own.</p>
 
       <h3 id="topic3_2"> Nutritional Information Acquisition </h3>
       <p>Because we wanted to predict calorie data about a food, we needed a reliable and open resource for nutritional information.
