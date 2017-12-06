@@ -34,6 +34,9 @@ To learn more about this project [click here](https://dskarbrevik.github.io/w210
 ### Workshop Material
 * [Workshop 3 Slides](https://docs.google.com/presentation/d/1B3jfyS-w944U3l0hexdWsBhgDp36QlR_N21YjB8G5nw/edit?usp=sharing)
 
+### Presentation 3 Material (final presentation)
+* [Presentation 3 Slides](https://docs.google.com/presentation/d/1HkmfbsswxrPRiLoZlBnUyxFR0_BirJmmvlY8KKOAjMA/edit?usp=sharing)
+
 ## Useful class links
 
 * [Expectations and deliverables](https://docs.google.com/document/d/16K7DXZ6S2Npp3DCzTI--TSAD8kXtRq7N2nsLoDm-EyY/edit)
