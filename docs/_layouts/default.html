@@ -71,14 +71,14 @@
     <section class="main-content">
 
       <h2 id="topic1"> What is FoodHUD? </h2>
-      <p>FoodHUD is an easy to use web application where a user uploads an image of food and then receives the name of the food along with nutritional data on the food.</p>
+      <p>FoodHUD, the Food Heads-Up Display, is an easy-to-use web application where a user uploads an image of food and then receives the name of the food along with an estimate of the caloric content of the food for every 100 grams of it. We call this the "Caloric Density" of the food.</p>
 
       <h2 id="topic2"> Background motivation </h2>
 
       <p>Millions of Americans struggle with their weight and its effects on their physical health.
         Portion control can be a serious challenge for busy people,
         and often it is difficult for someone to estimate the caloric content of a given meal.
-        While a human may struggle with the task,
+        While a human would often fail at the task,
         a well-trained machine may not. </p>
 
       <img src="obesity.jpg">
@@ -170,7 +170,7 @@
         We then fed these features into a PCA with a number of principal components varying from 1 to 100 and used a 5-fold cross-validation to compute a mean squared error.
         We used a much simpler model as our baseline, whose only input features were the sums across all pixels of each of the three color channels.
         This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features, which suggests that,
-        at the very least, linear regression is not a reasonable option for direct regression of caloric density.</p>
+        at the very least, linear regression is not a reasonable option for direct regression of caloric density on this subset of Food101.</p>
 
         <img src="cheesecake_regress.png">
         <img src="macaron_regress.png">
