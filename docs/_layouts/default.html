@@ -126,9 +126,9 @@
         </p>
       <p>Ultimately, we decided that automated data augmentation of our existing image set was the best path forward for us.
         This would allow us to expand our image set from the existing Food101 data set without worrying about data quality and accuracy.
-        Therefore, we produced 10 images from every 1 original image in Food101,
-        taking 5 different crops of the image in its original orientation and also its reflection about its vertical axis.
-        This expanded image set proved to improve our performance over the baseline, and so we were satisfied with it.</p>
+        Although we found a source that did this, we opted not to due to time. Their implementation would have required more
+        RAM than our systems had, and we could not spare the time to implement our own.
+        </p>
 
       <h3 id="topic3_2"> Nutritional Information Acquisition </h3>
       <p>Because we wanted to predict calorie data about a food, we needed a reliable and open resource for nutritional information.
