@@ -132,8 +132,8 @@
 
       <h3 id="topic3_2"> Nutritional Information Acquisition </h3>
       <p>Because we wanted to predict calorie data about a food, we needed a reliable and open resource for nutritional information.
-        Initially, we sought to use MyFitnessPal as a data source. It seemed like a reliable data source,
-        and all of the Food101 categories had at least one relevant entry in the nutritional database.
+        Initially, we sought to use MyFitnessPal as a data source. It seemed reliable enough,
+        and all of the Food101 categories had at least one relevant entry in its nutritional database.
         However, due to MyFitnessPal’s policy against automated collection of data, we chose to collect it by hand,
         which was cumbersome. Because of this, we only took one data point for each category,
         which resulted in quite a few categories that had anomalous calorie values.
@@ -141,12 +141,13 @@
         led us to discard MyFitnessPal as a data source.</p>
       <p>Fortunately, we found a reasonable public data source in the USDA National Nutrient Database for Standard Reference.
         This provides nutrient data about nearly 9000 foods, many of which overlap with the food categories in Food101.
-        Using the caloric information from this data source, we were able to compute the median caloric density (kcal/100g) for 53 of the original 101 food categories in Food101.
-        These calorie values seem reasonable and will allow us to integrate nutritional data into our application.</p>
+        Using the caloric information from this data source and a handy set of regular expressions, we were able to compute
+        the median caloric density (kcal/100g) for 53 of the original 101 food categories in Food101.
+        These calorie values seem valid and will allow us to integrate nutritional data into our application.</p>
 
 
 
-      <p>The distributions seem to suggest that MyFitnessPal's "per serving" calorie values and USDA's "per 100grams" calorie values are similar. However there are a couple issues.</p>
+      <p>The distributions seem to suggest that MyFitnessPal's "per serving" calorie values and USDA's "per 100 grams" calorie values are similar. However there are a couple of issues.</p>
 
       <p>First, here we see that there are some issues with the calorie values for foods in MyFitnessPal:</p>
       <img src="mfp_hist.png">
