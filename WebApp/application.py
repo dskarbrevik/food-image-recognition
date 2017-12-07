@@ -73,8 +73,10 @@ def index():
             image_ = Image.open(image_str)
             image = image_.resize((224, 224))
             # preprocess the image
+            # keeping only color channels
             x = np.array(image, dtype=np.float64)
             x = np.expand_dims(x, axis=0)
+            x = x[:, :, :, :3]
             x = preprocess_input(x)
             # run prediction
             model = ResNet50(weights='imagenet')
