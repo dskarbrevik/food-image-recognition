@@ -1,3 +1,4 @@
+from base64 import b64encode
 from flask import \
         Flask, \
         redirect, \
@@ -69,8 +70,8 @@ def index():
             image_str.seek(0)
             image_str.name = filename
             # using pillow for reshape
-            image = Image.open(image_str)
-            image = image.resize((224, 224))
+            image_ = Image.open(image_str)
+            image = image_.resize((224, 224))
             # preprocess the image
             x = np.array(image, dtype=np.float64)
             x = np.expand_dims(x, axis=0)
@@ -84,9 +85,15 @@ def index():
             top_1 = predictions[0][1]
             top_2 = predictions[1][1]
             top_3 = predictions[2][1]
+            # send data URI of image to next page
+            data_io = BytesIO()
+            image_.save(data_io, format="PNG")
+            data_io.seek(0)
+            data_uri = "data:image/png;base64,{}".format(
+                    b64encode(data_io.read()).decode("utf-8"))
             return render_template(
                     "prediction.html",
-                    filename=filename,
+                    data_uri=data_uri,
                     top_1=top_1,
                     top_2=top_2,
                     top_3=top_3)

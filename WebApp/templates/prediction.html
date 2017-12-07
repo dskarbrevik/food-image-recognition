@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>This is the image you uploaded:</h1>
-    <img src="{{ url_for('send_file', filename=filename) }}">
+    <img src="{{ data_uri }}" width="1000">
     <h4>We think it is a {{ top_1 }}</h4>
     <h4> But maybe it is a {{ top_2 }} </h4>
     <h4> Or perhaps even a {{ top_3 }} </h4>
