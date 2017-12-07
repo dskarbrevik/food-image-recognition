@@ -67,6 +67,7 @@ def index():
             image_str = BytesIO()
             image_str.write(file.read())
             image_str.seek(0)
+            image_str.name = filename
             # using pillow for reshape
             image = Image.open(image_str)
             image = image.resize((224, 224))
