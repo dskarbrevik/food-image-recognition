@@ -175,13 +175,17 @@
         We then fed these features into a PCA with a number of principal components varying from 1 to 100 and used a 5-fold cross-validation to compute a mean squared error.
         We used a much simpler model as our baseline, whose only input features were the sums across all pixels of each of the three color channels.
         This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features.
-        Additional models were also tested, including a "dummy", which only guessed the mean caloric density of the training data, and a random forest.
-        Neither the linear regression nor the random forest significantly outperformed the dummy.
-        These results together suggest that direct regression of caloric density is not a reasonable option for models trained on this subset of Food101.
       </p>
 
         <img src="cheesecake_regress.png">
         <img src="macaron_regress.png">
+      
+        <p>
+        Additional models were also tested, including a "dummy", which only guessed the mean caloric density of the training data, and a random forest.
+        Neither the linear regression nor the random forest significantly outperformed the dummy.
+        These results together suggest that direct regression of caloric density is not a reasonable option for models trained on this subset of Food101.
+        </p>
+
         <img src="model_comparison.png">
 
       <h3 id="topic3_4"> Web-Based Application </h3>
