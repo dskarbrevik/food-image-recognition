@@ -166,18 +166,23 @@
       <p> ImageNet CNN retrained on Food101 images. </p>
 
       <h4> Regression Modeling </h4>
-      <p>Our final architecture used classification and then looked up the median caloric density based on the class.
+      <p>
+      Our final architecture used classification and then looked up the median caloric density based on the class.
         However, we were also interested in determining the performance of the model when attempting to use linear regression to predict the caloric density directly.
         We ran an experiment with a subset of 1000 of the Food101 images,
         filtering down to those images belonging to the 53 classes for which we had caloric densities.
         Then, resizing the images, we collected features for each image from the Keras application for the VGG16 network trained on ImageNet.
         We then fed these features into a PCA with a number of principal components varying from 1 to 100 and used a 5-fold cross-validation to compute a mean squared error.
         We used a much simpler model as our baseline, whose only input features were the sums across all pixels of each of the three color channels.
-        This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features, which suggests that,
-        at the very least, linear regression is not a reasonable option for direct regression of caloric density on this subset of Food101.</p>
+        This three-feature model performed comparably with models trained on the PCA transformation of the extracted image features.
+        Additional models were also tested, including a "dummy", which only guessed the mean caloric density of the training data, and a random forest.
+        Neither the linear regression nor the random forest significantly outperformed the dummy.
+        These results together suggest that direct regression of caloric density is not a reasonable option for models trained on this subset of Food101.
+      </p>
 
         <img src="cheesecake_regress.png">
         <img src="macaron_regress.png">
+        <img src="model_comparison.png">
 
       <h3 id="topic3_4"> Web-Based Application </h3>
       <p>Using Python's Flask library and Google's Cloud services, we established a web application capable of serving Keras model predictions based on user provided content.
