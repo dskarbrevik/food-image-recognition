@@ -1,14 +1,15 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>FoodHUD</title>
+    <title>FoodHUD</title>
 </head>
+
 <body>
-    <h1>This is the image you uploaded:</h1>
-    <img src="{{ data_uri }}" width="1000">
-    <h4>We think it is a {{ top_1 }}</h4>
-    <h4> But maybe it is a {{ top_2 }} </h4>
-    <h4> Or perhaps even a {{ top_3 }} </h4>
+    <h3> Your food image: </h3>
+    <img src="{{uploadURL}}">
+    <h3>We think this is a <b>{{top_1}}</b></h3>
+    <!--
+    <p>But maybe it's a <b>{{top_2}}</b></p>
+    <p>Or possibly even a <b>{{top_3}}</b></p>
+    -->
 </body>
 </html>
