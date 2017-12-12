@@ -1,42 +1,21 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>FoodHUD</title>
 
+    <title>FoodHUD</title>
 
-  <!--
-      <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
--->
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+
 </head>
 
 <body>
-    <h1>Start by uploading an image of food:</h1>
-
-    <script>
-        function previewFile() {
-          var preview = document.querySelector('img');
-          var file    = document.querySelector('input[type=file]').files[0];
-          var reader  = new FileReader();
-
-          reader.onloadend = function () {
-            preview.src = reader.result;
-          }
-
-          if (file) {
-            reader.readAsDataURL(file);
-          } else {
-            preview.src = "";
-          }
-        }
-    </script>
-
-    <form method=post enctype=multipart/form-data>
-        <p><input type=file onchange="previewFile()" name="file">
-            <input type=submit value="Upload">
-    </form>
-
-    <img src="" width="1000" alt="Image preview...">
-
+    <div class=hero>
+        <h1> Welcome to FoodHUD </h1>
+        <br>
+        <h2> Start by uploading an image of food: </h2>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit">
+        </form>
+    </div>
 </body>
 </html>
