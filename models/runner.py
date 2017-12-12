@@ -23,7 +23,6 @@ from keras.applications.inception_v3 import InceptionV3
 from keras.applications.inception_v3 import preprocess_input, decode_predictions
 from keras.preprocessing import image
 from keras.layers import Input
-
 import imageAugmenter as T
 
 import utils
@@ -35,12 +34,20 @@ from utils import load_test
 
 
 
+print 'Starting to Load Training Data'
 X_train, y_train = load_train()
+print 'Done Loading Training Data'
+print 'Starting to Load Test Data'
 X_test, y_test = load_test()
+print 'Done Loading Test Data'
 
-n_classes = 101
+n_classes = 1
 y_train_cat = to_categorical(y_train, nb_classes=n_classes)
 y_test_cat = to_categorical(y_test, nb_classes=n_classes)
+
+import multiprocessing as mp
+num_processes = 6
+#pool = mp.Pool(processes=num_processes)
 
 train_datagen = T.ImageDataGenerator(
     featurewise_center=False,  # set input mean to 0 over the dataset
@@ -58,26 +65,27 @@ train_datagen = T.ImageDataGenerator(
     fill_mode='reflect')
 train_datagen.config['random_crop_size'] = (299, 299)
 train_datagen.set_pipeline([T.random_transform, T.random_crop, T.preprocess_input])
-train_generator = train_datagen.flow(X_train, y_train_cat, batch_size=64, seed=11, pool=pool)
+train_generator = train_datagen.flow(X_train, y_train_cat, batch_size=64, seed=11)
 
 test_datagen = T.ImageDataGenerator()
 test_datagen.config['random_crop_size'] = (299, 299)
 test_datagen.set_pipeline([T.random_transform, T.random_crop, T.preprocess_input])
-test_generator = test_datagen.flow(X_test, y_test_cat, batch_size=64, seed=11, pool=pool)
+test_generator = test_datagen.flow(X_test, y_test_cat, batch_size=64, seed=11)
 
 ## Baseline Model
 from utils import predictImage
 from utils import load_model
 
-baseline_model = load_model(filepath='/Users/amitabha/w210-food-image-recognition/mobile/iOS/model4b.10-0.68.hdf5')
-predictImage(filepath='http://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/7/13/0/PXSP01_Baklava.jpg.rend.hgtvcom.616.462.suffix/1384784356294.jpeg')
+#baseline_model = load_model('/Users/amitabha/w210-food-image-recognition/mobile/iOS/model4b.10-0.68.hdf5')
+#predictImage('http://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/7/13/0/PXSP01_Baklava.jpg.rend.hgtvcom.616.462.suffix/1384784356294.jpeg')
 
 ## Resnet Model
 from model_utils import createResNetModel
 from model_utils import compileAndFitModel
 
 resnet_model = createResNetModel()
-compileAndFit(resnet_model,'reset',train_generator, X_train)
+
+compileAndFitModel(resnet_model, train_generator, test_generator, X_train, X_test, y_train, y_test)
 
 preds_top_1 = {k: collections.Counter(v[0]).most_common(1) for k, v in preds_with_crop.items()}
 preds_10_crop = {}
