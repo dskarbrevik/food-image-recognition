@@ -34,8 +34,11 @@ To learn more about this project [click here](https://dskarbrevik.github.io/w210
 ### Workshop Material
 * [Workshop 3 Slides](https://docs.google.com/presentation/d/1B3jfyS-w944U3l0hexdWsBhgDp36QlR_N21YjB8G5nw/edit?usp=sharing)
 
-### Presentation 3 Material (final presentation)
+### Presentation 3 Material (final class presentation)
 * [Presentation 3 Slides](https://docs.google.com/presentation/d/1HkmfbsswxrPRiLoZlBnUyxFR0_BirJmmvlY8KKOAjMA/edit?usp=sharing)
+
+### Capstone Presentation
+* [Capstone Slides](https://docs.google.com/presentation/d/1Tqte_rH1MhuyMVbnnJ5LpxjiplYjIn4FtdRMFdLfIOo/edit?usp=sharing)
 
 ## Useful class links
 
@@ -52,3 +55,5 @@ To learn more about this project [click here](https://dskarbrevik.github.io/w210
 11/14/17 : Presentation 2
 
 12/12/17 : Presentation 3 (last presentation... supposedly a couple more weeks to wrap up deliverable)
+
+12/21/2017: Capstone Presentation
