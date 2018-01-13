@@ -1,5 +1,5 @@
-# food-image-recognition (FoodHUD)
-This is a group class project (W210 Capstone Project) to label calorie counts from images of food.
+# Food Heads Up Display (FoodHUD)
+This is a food image recognition group class project (W210 Capstone Project). Our goal is to label calorie counts from images of food.
 
 #### Group Members: 
 * Joseph Downs
