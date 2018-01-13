@@ -6,7 +6,7 @@ This is a group class project (W210 Capstone Project) to label calorie counts fr
 * Amitabha Karmakar
 * David Skarbrevik
 
-To demo this project [click here](https://foodhud-project.appspot.com/) (not ready yet :D)
+To demo this project [click here](https://foodhud-project.appspot.com/) (currently down to save money... google cloud is expensive :D)
 
 To learn more about this project [click here](https://dskarbrevik.github.io/w210-food-image-recognition/)
 
