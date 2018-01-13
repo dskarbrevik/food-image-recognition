@@ -1,4 +1,4 @@
-# w210-food-image-recognition
+# food-image-recognition (FoodHUD)
 This is a group class project (W210 Capstone Project) to label calorie counts from images of food.
 
 #### Group Members: 
